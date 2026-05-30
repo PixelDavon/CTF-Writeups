@@ -10,7 +10,7 @@ Always follow the template at `TEMPLATE.md` when creating or editing writeups.
 - **Category:** challenge category
 - **Tags:** comma-separated
 
-### Optional fields
+### Optional fields (leave blank if unknown)
 - **Difficulty:** Easy · Medium · Hard
 - **Author:**
 - **Date:** Month YYYY or YYYY

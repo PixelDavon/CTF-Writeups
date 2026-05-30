@@ -4,11 +4,11 @@
 
 **Category:** Misc
 
-**Difficulty:** Unknown
+**Difficulty:** 
 
 **Tags:** AI, Prompt Injection
 
-**Author:** Unknown
+**Author:** 
 
 **Date:** 2025
 

@@ -4,11 +4,11 @@
 
 **Category:** Web
 
-**Difficulty:** Medium
+**Difficulty:** 
 
 **Tags:** Flask, Jinja2, SSTI
 
-**Author:** Unknown
+**Author:** 
 
 **Date:** 2025
 

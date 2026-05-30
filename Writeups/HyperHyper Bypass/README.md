@@ -4,11 +4,11 @@
 
 **Category:** Web
 
-**Difficulty:** Unknown
+**Difficulty:** 
 
 **Tags:** HLL
 
-**Author:** Unknown
+**Author:** 
 
 **Date:** 2026
 
