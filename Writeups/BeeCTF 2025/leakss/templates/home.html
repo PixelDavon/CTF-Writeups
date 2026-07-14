@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<title>Home</title>
+<h2>Welcome, {{ username }}!</h2>
+{% if flag %}
+<p>Congratz! Here's the flag: {{ flag }}</p>
+{% endif %} {% if password %}
+<iframe srcdoc="<h1>Yes! {{password}} is a substring of your password</h1>">
+  {% endif%}
+  <a href="{{ url_for('logout') }}">Logout</a>
+</iframe>

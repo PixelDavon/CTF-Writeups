@@ -1,20 +1,16 @@
 # Challenge Name
 
-**CTF:** Event Name Year
+**CTF:** EventName Year
 
-**Category:** Category
+**Category:** 
 
-**Difficulty:** Easy Medium Hard
+**Difficulty:** 
 
-**Tags:** tag1, tag2, tag3
+**Tags:** 
 
-**Author:** optional
+**Author:** 
 
 **Date:** Month YYYY or YYYY
-
-## Objective
-
-## Overview
 
 ## Analysis
 

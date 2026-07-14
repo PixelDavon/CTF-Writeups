@@ -1,0 +1,16 @@
+services:
+  nash_jail:
+    build: .
+    restart: unless-stopped
+    ports:
+      - "1337:1337"
+    security_opt:
+      - no-new-privileges:true
+    cap_drop:
+      - ALL
+    tmpfs:
+      - /tmp
+    read_only: true
+    mem_limit: 256m
+    cpus: 1
+    pids_limit: 1024

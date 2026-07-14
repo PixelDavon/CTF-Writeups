@@ -2,7 +2,7 @@
 
 ## CTF Writeup Structure
 
-All writeups live at `Writeups/<challenge name>/README.md`.
+All writeups live at `Writeups/<category>/<challenge name>/README.md` or `Writeups/<challenge name>/README.md`.
 Always follow the template at `TEMPLATE.md` when creating or editing writeups.
 
 ### Required fields in metadata block
@@ -14,13 +14,6 @@ Always follow the template at `TEMPLATE.md` when creating or editing writeups.
 - **Difficulty:** Easy · Medium · Hard
 - **Author:**
 - **Date:** Month YYYY or YYYY
-
-### Required sections in order
-1. Objective
-2. Overview
-3. Analysis
-4. Solution
-5. Conclusion — must end with `Flag: \`PREFIX{...}\``
 
 ### Rules
 - Do not add "(Migrated from Docs)" or any suffix to the challenge title
