@@ -1,0 +1,117 @@
+Dump of assembler code for function ropme:
+   0x0804150b <+0>:     push   ebp
+   0x0804150c <+1>:     mov    ebp,esp
+   0x0804150e <+3>:     push   ebx
+   0x0804150f <+4>:     sub    esp,0x74
+   0x08041512 <+7>:     call   0x80411a0 <__x86.get_pc_thunk.bx>
+   0x08041517 <+12>:    add    ebx,0x2a79
+   0x0804151d <+18>:    sub    esp,0xc
+   0x08041520 <+21>:    lea    eax,[ebx-0x1e4c]
+   0x08041526 <+27>:    push   eax
+   0x08041527 <+28>:    call   0x8041070 <printf@plt>
+   0x0804152c <+33>:    add    esp,0x10
+   0x0804152f <+36>:    sub    esp,0x8
+   0x08041532 <+39>:    lea    eax,[ebp-0x10]
+   0x08041535 <+42>:    push   eax
+   0x08041536 <+43>:    lea    eax,[ebx-0x1e3f]
+   0x0804153c <+49>:    push   eax
+   0x0804153d <+50>:    call   0x8041130 <__isoc99_scanf@plt> // SCAN
+   0x08041542 <+55>:    add    esp,0x10
+   0x08041545 <+58>:    call   0x80410a0 <getchar@plt>
+   0x0804154a <+63>:    mov    edx,DWORD PTR [ebp-0x10]
+   0x0804154d <+66>:    mov    eax,DWORD PTR [ebx+0x7c]
+   0x08041553 <+72>:    cmp    edx,eax                    // COMPARE
+   0x08041555 <+74>:    jne    0x8041561 <ropme+86>
+   0x08041557 <+76>:    call   0x804129d <A>
+   0x0804155c <+81>:    jmp    0x804168e <ropme+387>
+   0x08041561 <+86>:    mov    edx,DWORD PTR [ebp-0x10]
+   0x08041564 <+89>:    mov    eax,DWORD PTR [ebx+0x80]
+   0x0804156a <+95>:    cmp    edx,eax                    // COMPARE
+   0x0804156c <+97>:    jne    0x8041578 <ropme+109>
+   0x0804156e <+99>:    call   0x80412cf <B>
+   0x08041573 <+104>:   jmp    0x804168e <ropme+387>
+   0x08041578 <+109>:   mov    edx,DWORD PTR [ebp-0x10]
+   0x0804157b <+112>:   mov    eax,DWORD PTR [ebx+0x84]
+   0x08041581 <+118>:   cmp    edx,eax                    // COMPARE
+   0x08041583 <+120>:   jne    0x804158f <ropme+132>
+   0x08041585 <+122>:   call   0x8041301 <C>
+   0x0804158a <+127>:   jmp    0x804168e <ropme+387>
+   0x0804158f <+132>:   mov    edx,DWORD PTR [ebp-0x10]
+   0x08041592 <+135>:   mov    eax,DWORD PTR [ebx+0x88]
+   0x08041598 <+141>:   cmp    edx,eax                    // COMPARE
+   0x0804159a <+143>:   jne    0x80415a6 <ropme+155>
+   0x0804159c <+145>:   call   0x8041333 <D>
+   0x080415a1 <+150>:   jmp    0x804168e <ropme+387>
+   0x080415a6 <+155>:   mov    edx,DWORD PTR [ebp-0x10]
+   0x080415a9 <+158>:   mov    eax,DWORD PTR [ebx+0x8c]
+   0x080415af <+164>:   cmp    edx,eax                    // COMPARE
+   0x080415b1 <+166>:   jne    0x80415bd <ropme+178>
+   0x080415b3 <+168>:   call   0x8041365 <E>
+   0x080415b8 <+173>:   jmp    0x804168e <ropme+387>
+   0x080415bd <+178>:   mov    edx,DWORD PTR [ebp-0x10]
+   0x080415c0 <+181>:   mov    eax,DWORD PTR [ebx+0x90]
+   0x080415c6 <+187>:   cmp    edx,eax                    // COMPARE
+   0x080415c8 <+189>:   jne    0x80415d4 <ropme+201>
+   0x080415ca <+191>:   call   0x8041397 <F>
+   0x080415cf <+196>:   jmp    0x804168e <ropme+387>
+   0x080415d4 <+201>:   mov    edx,DWORD PTR [ebp-0x10]
+   0x080415d7 <+204>:   mov    eax,DWORD PTR [ebx+0x94]
+   0x080415dd <+210>:   cmp    edx,eax                    // COMPARE
+   0x080415df <+212>:   jne    0x80415eb <ropme+224>
+   0x080415e1 <+214>:   call   0x80413c9 <G>
+   0x080415e6 <+219>:   jmp    0x804168e <ropme+387>
+   0x080415eb <+224>:   sub    esp,0xc
+   0x080415ee <+227>:   lea    eax,[ebx-0x1e3c]
+   0x080415f4 <+233>:   push   eax
+   0x080415f5 <+234>:   call   0x8041070 <printf@plt>
+   0x080415fa <+239>:   add    esp,0x10
+   0x080415fd <+242>:   sub    esp,0xc
+   0x08041600 <+245>:   lea    eax,[ebp-0x74]
+   0x08041603 <+248>:   push   eax
+   0x08041604 <+249>:   call   0x8041080 <gets@plt> ////////// GETS
+   0x08041609 <+254>:   add    esp,0x10
+   0x0804160c <+257>:   sub    esp,0xc
+   0x0804160f <+260>:   lea    eax,[ebp-0x74]
+   0x08041612 <+263>:   push   eax
+   0x08041613 <+264>:   call   0x8041140 <atoi@plt>
+   0x08041618 <+269>:   add    esp,0x10
+   0x0804161b <+272>:   mov    edx,DWORD PTR [ebx+0x98] // 08044028 B sum
+   0x08041621 <+278>:   cmp    eax,edx                    // COMPARE
+   0x08041623 <+280>:   jne    0x804167c <ropme+369> ///////////////////
+   0x08041625 <+282>:   sub    esp,0x8
+   0x08041628 <+285>:   push   0x0
+   0x0804162a <+287>:   lea    eax,[ebx-0x1e1c]
+   0x08041630 <+293>:   push   eax
+   0x08041631 <+294>:   call   0x80410f0 <open@plt>
+   0x08041636 <+299>:   add    esp,0x10
+   0x08041639 <+302>:   mov    DWORD PTR [ebp-0xc],eax
+   0x0804163c <+305>:   sub    esp,0x4
+   0x0804163f <+308>:   push   0x64
+   0x08041641 <+310>:   lea    eax,[ebp-0x74]
+   0x08041644 <+313>:   push   eax
+   0x08041645 <+314>:   push   DWORD PTR [ebp-0xc]
+   0x08041648 <+317>:   call   0x8041060 <read@plt>
+   0x0804164d <+322>:   add    esp,0x10
+   0x08041650 <+325>:   mov    BYTE PTR [ebp+eax*1-0x74],0x0
+   0x08041655 <+330>:   sub    esp,0xc
+   0x08041658 <+333>:   lea    eax,[ebp-0x74]
+   0x0804165b <+336>:   push   eax
+   0x0804165c <+337>:   call   0x80410d0 <puts@plt>
+   0x08041661 <+342>:   add    esp,0x10
+   0x08041664 <+345>:   sub    esp,0xc
+   0x08041667 <+348>:   push   DWORD PTR [ebp-0xc]
+   0x0804166a <+351>:   call   0x8041150 <close@plt>
+   0x0804166f <+356>:   add    esp,0x10
+   0x08041672 <+359>:   sub    esp,0xc
+   0x08041675 <+362>:   push   0x0
+   0x08041677 <+364>:   call   0x80410e0 <exit@plt>
+   0x0804167c <+369>:   sub    esp,0xc
+   0x0804167f <+372>:   lea    eax,[ebx-0x1e00]
+   0x08041685 <+378>:   push   eax
+   0x08041686 <+379>:   call   0x80410d0 <puts@plt>
+   0x0804168b <+384>:   add    esp,0x10
+   0x0804168e <+387>:   mov    eax,0x0
+   0x08041693 <+392>:   mov    ebx,DWORD PTR [ebp-0x4]
+   0x08041696 <+395>:   leave
+   0x08041697 <+396>:   ret
+End of assembler dump.

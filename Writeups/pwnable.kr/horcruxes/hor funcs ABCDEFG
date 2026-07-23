@@ -1,0 +1,146 @@
+Dump of assembler code for function A:
+   0x0804129d <+0>:     push   ebp
+   0x0804129e <+1>:     mov    ebp,esp
+   0x080412a0 <+3>:     push   ebx
+   0x080412a1 <+4>:     sub    esp,0x4
+   0x080412a4 <+7>:     call   0x80418a2 <__x86.get_pc_thunk.ax> // set ebp
+   0x080412a9 <+12>:    add    eax,0x2ce7 // GOT
+   0x080412ae <+17>:    mov    edx,DWORD PTR [eax+0x7c] // bss a
+   0x080412b4 <+23>:    sub    esp,0x8
+   0x080412b7 <+26>:    push   edx
+   0x080412b8 <+27>:    lea    edx,[eax-0x1f88]
+   0x080412be <+33>:    push   edx
+   0x080412bf <+34>:    mov    ebx,eax
+   0x080412c1 <+36>:    call   0x8041070 <printf@plt>
+   0x080412c6 <+41>:    add    esp,0x10
+   0x080412c9 <+44>:    nop
+   0x080412ca <+45>:    mov    ebx,DWORD PTR [ebp-0x4]
+   0x080412cd <+48>:    leave
+   0x080412ce <+49>:    ret
+End of assembler dump.
+
+Dump of assembler code for function B:
+   0x080412cf <+0>:     push   ebp
+   0x080412d0 <+1>:     mov    ebp,esp
+   0x080412d2 <+3>:     push   ebx
+   0x080412d3 <+4>:     sub    esp,0x4
+   0x080412d6 <+7>:     call   0x80418a2 <__x86.get_pc_thunk.ax>
+   0x080412db <+12>:    add    eax,0x2cb5
+   0x080412e0 <+17>:    mov    edx,DWORD PTR [eax+0x80]
+   0x080412e6 <+23>:    sub    esp,0x8
+   0x080412e9 <+26>:    push   edx
+   0x080412ea <+27>:    lea    edx,[eax-0x1f5c]
+   0x080412f0 <+33>:    push   edx
+   0x080412f1 <+34>:    mov    ebx,eax
+   0x080412f3 <+36>:    call   0x8041070 <printf@plt>
+   0x080412f8 <+41>:    add    esp,0x10
+   0x080412fb <+44>:    nop
+   0x080412fc <+45>:    mov    ebx,DWORD PTR [ebp-0x4]
+   0x080412ff <+48>:    leave
+   0x08041300 <+49>:    ret
+End of assembler dump.
+
+Dump of assembler code for function C:
+   0x08041301 <+0>:     push   ebp
+   0x08041302 <+1>:     mov    ebp,esp
+   0x08041304 <+3>:     push   ebx
+   0x08041305 <+4>:     sub    esp,0x4
+   0x08041308 <+7>:     call   0x80418a2 <__x86.get_pc_thunk.ax>
+   0x0804130d <+12>:    add    eax,0x2c83
+   0x08041312 <+17>:    mov    edx,DWORD PTR [eax+0x84]
+   0x08041318 <+23>:    sub    esp,0x8
+   0x0804131b <+26>:    push   edx
+   0x0804131c <+27>:    lea    edx,[eax-0x1f30]
+   0x08041322 <+33>:    push   edx
+   0x08041323 <+34>:    mov    ebx,eax
+   0x08041325 <+36>:    call   0x8041070 <printf@plt>
+   0x0804132a <+41>:    add    esp,0x10
+   0x0804132d <+44>:    nop
+   0x0804132e <+45>:    mov    ebx,DWORD PTR [ebp-0x4]
+   0x08041331 <+48>:    leave
+   0x08041332 <+49>:    ret
+End of assembler dump.
+
+Dump of assembler code for function D:
+   0x08041333 <+0>:     push   ebp
+   0x08041334 <+1>:     mov    ebp,esp
+   0x08041336 <+3>:     push   ebx
+   0x08041337 <+4>:     sub    esp,0x4
+   0x0804133a <+7>:     call   0x80418a2 <__x86.get_pc_thunk.ax>
+   0x0804133f <+12>:    add    eax,0x2c51
+   0x08041344 <+17>:    mov    edx,DWORD PTR [eax+0x88]
+   0x0804134a <+23>:    sub    esp,0x8
+   0x0804134d <+26>:    push   edx
+   0x0804134e <+27>:    lea    edx,[eax-0x1f00]
+   0x08041354 <+33>:    push   edx
+   0x08041355 <+34>:    mov    ebx,eax
+   0x08041357 <+36>:    call   0x8041070 <printf@plt>
+   0x0804135c <+41>:    add    esp,0x10
+   0x0804135f <+44>:    nop
+   0x08041360 <+45>:    mov    ebx,DWORD PTR [ebp-0x4]
+   0x08041363 <+48>:    leave
+   0x08041364 <+49>:    ret
+End of assembler dump.
+
+Dump of assembler code for function E:
+   0x08041365 <+0>:     push   ebp
+   0x08041366 <+1>:     mov    ebp,esp
+   0x08041368 <+3>:     push   ebx
+   0x08041369 <+4>:     sub    esp,0x4
+   0x0804136c <+7>:     call   0x80418a2 <__x86.get_pc_thunk.ax>
+   0x08041371 <+12>:    add    eax,0x2c1f
+   0x08041376 <+17>:    mov    edx,DWORD PTR [eax+0x8c]
+   0x0804137c <+23>:    sub    esp,0x8
+   0x0804137f <+26>:    push   edx
+   0x08041380 <+27>:    lea    edx,[eax-0x1ecc]
+   0x08041386 <+33>:    push   edx
+   0x08041387 <+34>:    mov    ebx,eax
+   0x08041389 <+36>:    call   0x8041070 <printf@plt>
+   0x0804138e <+41>:    add    esp,0x10
+   0x08041391 <+44>:    nop
+   0x08041392 <+45>:    mov    ebx,DWORD PTR [ebp-0x4]
+   0x08041395 <+48>:    leave
+   0x08041396 <+49>:    ret
+End of assembler dump.
+
+Dump of assembler code for function F:
+   0x08041397 <+0>:     push   ebp
+   0x08041398 <+1>:     mov    ebp,esp
+   0x0804139a <+3>:     push   ebx
+   0x0804139b <+4>:     sub    esp,0x4
+   0x0804139e <+7>:     call   0x80418a2 <__x86.get_pc_thunk.ax>
+   0x080413a3 <+12>:    add    eax,0x2bed
+   0x080413a8 <+17>:    mov    edx,DWORD PTR [eax+0x90]
+   0x080413ae <+23>:    sub    esp,0x8
+   0x080413b1 <+26>:    push   edx
+   0x080413b2 <+27>:    lea    edx,[eax-0x1e98]
+   0x080413b8 <+33>:    push   edx
+   0x080413b9 <+34>:    mov    ebx,eax
+   0x080413bb <+36>:    call   0x8041070 <printf@plt>
+   0x080413c0 <+41>:    add    esp,0x10
+   0x080413c3 <+44>:    nop
+   0x080413c4 <+45>:    mov    ebx,DWORD PTR [ebp-0x4]
+   0x080413c7 <+48>:    leave
+   0x080413c8 <+49>:    ret
+End of assembler dump.
+
+Dump of assembler code for function G:
+   0x080413c9 <+0>:     push   ebp
+   0x080413ca <+1>:     mov    ebp,esp
+   0x080413cc <+3>:     push   ebx
+   0x080413cd <+4>:     sub    esp,0x4
+   0x080413d0 <+7>:     call   0x80418a2 <__x86.get_pc_thunk.ax>
+   0x080413d5 <+12>:    add    eax,0x2bbb
+   0x080413da <+17>:    mov    edx,DWORD PTR [eax+0x94]
+   0x080413e0 <+23>:    sub    esp,0x8
+   0x080413e3 <+26>:    push   edx
+   0x080413e4 <+27>:    lea    edx,[eax-0x1e70]
+   0x080413ea <+33>:    push   edx
+   0x080413eb <+34>:    mov    ebx,eax
+   0x080413ed <+36>:    call   0x8041070 <printf@plt>
+   0x080413f2 <+41>:    add    esp,0x10
+   0x080413f5 <+44>:    nop
+   0x080413f6 <+45>:    mov    ebx,DWORD PTR [ebp-0x4]
+   0x080413f9 <+48>:    leave
+   0x080413fa <+49>:    ret
+End of assembler dump.

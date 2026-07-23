@@ -1,0 +1,70 @@
+0804400c B a
+0804129d T A
+080401cc r __abi_tag
+         U alarm@GLIBC_2.0
+         U atoi@GLIBC_2.0
+08044010 B b
+080412cf T B
+08044008 B __bss_start
+08044014 B c
+08041301 T C
+         U close@GLIBC_2.0
+08044008 b completed.0
+         w __cxa_finalize@GLIBC_2.1.3
+08044018 B d
+08041333 T D
+08044000 D __data_start
+08044000 W data_start
+080411b0 t deregister_tm_clones
+08041240 t __do_global_dtors_aux
+08043e8c d __do_global_dtors_aux_fini_array_entry
+08044004 D __dso_handle
+08043e90 d _DYNAMIC
+0804401c B e
+08041365 T E
+08044008 D _edata
+0804402c B _end
+         U exit@GLIBC_2.0
+08044020 B f
+08041397 T F
+080418a8 T _fini
+08042000 R _fp_hw
+08041290 t frame_dummy
+08043e88 d __frame_dummy_init_array_entry
+080424e0 r __FRAME_END__
+08044024 B g
+080413c9 T G
+         U getchar@GLIBC_2.0
+         U gets@GLIBC_2.0
+08043f90 d _GLOBAL_OFFSET_TABLE_ ///////////////// GOT
+         w __gmon_start__
+08042248 r __GNU_EH_FRAME_HDR
+08041866 T hint ///////////////////////////////////////////////
+08041000 T _init
+08041698 T init_ABCDEFG ///////////////////////////////////////////////
+08042004 R _IO_stdin_used
+         U __isoc99_scanf@GLIBC_2.7
+         w _ITM_deregisterTMCloneTable
+         w _ITM_registerTMCloneTable
+         U __libc_start_main@GLIBC_2.34
+080413fb T main ///////////////////////////////////////////////
+         U open@GLIBC_2.0
+         U printf@GLIBC_2.0
+         U puts@GLIBC_2.0
+         U rand@GLIBC_2.0
+         U read@GLIBC_2.0
+080411f0 t register_tm_clones
+0804150b T ropme ///////////////////////////////////////////////
+         U seccomp_init
+         U seccomp_load
+         U seccomp_rule_add
+         U setvbuf@GLIBC_2.0
+         U srand@GLIBC_2.0
+08041170 T _start
+         U stdin@GLIBC_2.0
+         U stdout@GLIBC_2.0
+08044028 B sum ///////////////////////////////////////////////
+08044008 D __TMC_END__
+080418a2 T __x86.get_pc_thunk.ax
+080411a0 T __x86.get_pc_thunk.bx
+08041299 T __x86.get_pc_thunk.dx

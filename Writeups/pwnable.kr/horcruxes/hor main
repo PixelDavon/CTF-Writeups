@@ -1,0 +1,86 @@
+Dump of assembler code for function main:
+   0x080413fb <+0>:     lea    ecx,[esp+0x4]
+   0x080413ff <+4>:     and    esp,0xfffffff0
+   0x08041402 <+7>:     push   DWORD PTR [ecx-0x4]
+   0x08041405 <+10>:    push   ebp
+   0x08041406 <+11>:    mov    ebp,esp
+   0x08041408 <+13>:    push   ebx
+   0x08041409 <+14>:    push   ecx
+=> 0x0804140a <+15>:    sub    esp,0x10
+   0x0804140d <+18>:    call   0x80411a0 <__x86.get_pc_thunk.bx>
+   0x08041412 <+23>:    add    ebx,0x2b7e
+   0x08041418 <+29>:    mov    eax,DWORD PTR [ebx+0x64]
+   0x0804141e <+35>:    mov    eax,DWORD PTR [eax]
+   0x08041420 <+37>:    push   0x0
+   0x08041422 <+39>:    push   0x2
+   0x08041424 <+41>:    push   0x0
+   0x08041426 <+43>:    push   eax
+   0x08041427 <+44>:    call   0x8041110 <setvbuf@plt>
+   0x0804142c <+49>:    add    esp,0x10
+   0x0804142f <+52>:    mov    eax,DWORD PTR [ebx+0x60]
+   0x08041435 <+58>:    mov    eax,DWORD PTR [eax]
+   0x08041437 <+60>:    push   0x0
+   0x08041439 <+62>:    push   0x2
+   0x0804143b <+64>:    push   0x0
+   0x0804143d <+66>:    push   eax
+   0x0804143e <+67>:    call   0x8041110 <setvbuf@plt>
+   0x08041443 <+72>:    add    esp,0x10
+   0x08041446 <+75>:    sub    esp,0xc
+   0x08041449 <+78>:    push   0x3c
+   0x0804144b <+80>:    call   0x80410c0 <alarm@plt>
+   0x08041450 <+85>:    add    esp,0x10
+   0x08041453 <+88>:    call   0x8041866 <hint>
+   0x08041458 <+93>:    call   0x8041698 <init_ABCDEFG>
+   0x0804145d <+98>:    sub    esp,0xc
+   0x08041460 <+101>:   push   0x0
+   0x08041462 <+103>:   call   0x8041040 <seccomp_init@plt>
+   0x08041467 <+108>:   add    esp,0x10
+   0x0804146a <+111>:   mov    DWORD PTR [ebp-0xc],eax
+   0x0804146d <+114>:   push   0x0
+   0x0804146f <+116>:   push   0xad
+   0x08041474 <+121>:   push   0x7fff0000
+   0x08041479 <+126>:   push   DWORD PTR [ebp-0xc]
+   0x0804147c <+129>:   call   0x8041090 <seccomp_rule_add@plt>
+   0x08041481 <+134>:   add    esp,0x10
+   0x08041484 <+137>:   push   0x0
+   0x08041486 <+139>:   push   0x5
+   0x08041488 <+141>:   push   0x7fff0000
+   0x0804148d <+146>:   push   DWORD PTR [ebp-0xc]
+   0x08041490 <+149>:   call   0x8041090 <seccomp_rule_add@plt>
+   0x08041495 <+154>:   add    esp,0x10
+   0x08041498 <+157>:   push   0x0
+   0x0804149a <+159>:   push   0x127
+   0x0804149f <+164>:   push   0x7fff0000
+   0x080414a4 <+169>:   push   DWORD PTR [ebp-0xc]
+   0x080414a7 <+172>:   call   0x8041090 <seccomp_rule_add@plt>
+   0x080414ac <+177>:   add    esp,0x10
+   0x080414af <+180>:   push   0x0
+   0x080414b1 <+182>:   push   0x3
+   0x080414b3 <+184>:   push   0x7fff0000
+   0x080414b8 <+189>:   push   DWORD PTR [ebp-0xc]
+   0x080414bb <+192>:   call   0x8041090 <seccomp_rule_add@plt>
+   0x080414c0 <+197>:   add    esp,0x10
+   0x080414c3 <+200>:   push   0x0
+   0x080414c5 <+202>:   push   0x4
+   0x080414c7 <+204>:   push   0x7fff0000
+   0x080414cc <+209>:   push   DWORD PTR [ebp-0xc]
+   0x080414cf <+212>:   call   0x8041090 <seccomp_rule_add@plt>
+   0x080414d4 <+217>:   add    esp,0x10
+   0x080414d7 <+220>:   push   0x0
+   0x080414d9 <+222>:   push   0xfc
+   0x080414de <+227>:   push   0x7fff0000
+   0x080414e3 <+232>:   push   DWORD PTR [ebp-0xc]
+   0x080414e6 <+235>:   call   0x8041090 <seccomp_rule_add@plt>
+   0x080414eb <+240>:   add    esp,0x10
+   0x080414ee <+243>:   sub    esp,0xc
+   0x080414f1 <+246>:   push   DWORD PTR [ebp-0xc]
+   0x080414f4 <+249>:   call   0x80410b0 <seccomp_load@plt>
+   0x080414f9 <+254>:   add    esp,0x10
+   0x080414fc <+257>:   call   0x804150b <ropme>
+   0x08041501 <+262>:   lea    esp,[ebp-0x8]
+   0x08041504 <+265>:   pop    ecx
+   0x08041505 <+266>:   pop    ebx
+   0x08041506 <+267>:   pop    ebp
+   0x08041507 <+268>:   lea    esp,[ecx-0x4]
+   0x0804150a <+271>:   ret
+End of assembler dump.
