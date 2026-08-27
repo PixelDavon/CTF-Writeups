@@ -1,0 +1,4 @@
+md5calculator is running at nc 0 10018
+pwn it and get shell!
+
+nc 0 10018 if service is down

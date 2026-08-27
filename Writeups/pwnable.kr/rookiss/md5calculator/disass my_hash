@@ -1,0 +1,68 @@
+Dump of assembler code for function my_hash:
+   0x08048ed8 <+0>:     push   ebp
+   0x08048ed9 <+1>:     mov    ebp,esp
+   0x08048edb <+3>:     push   ebx
+   0x08048edc <+4>:     sub    esp,0x34
+   0x08048edf <+7>:     mov    eax,gs:0x14
+   0x08048ee5 <+13>:    mov    DWORD PTR [ebp-0xc],eax
+   0x08048ee8 <+16>:    xor    eax,eax
+   0x08048eea <+18>:    lea    eax,[ebp-0x2c]
+   0x08048eed <+21>:    mov    DWORD PTR [ebp-0x34],eax
+   0x08048ef0 <+24>:    mov    DWORD PTR [ebp-0x30],0x0
+   0x08048ef7 <+31>:    mov    DWORD PTR [ebp-0x38],0x0
+   0x08048efe <+38>:    jmp    0x8048f16 <my_hash+62>
+   0x08048f00 <+40>:    mov    eax,DWORD PTR [ebp-0x38]
+   0x08048f03 <+43>:    shl    eax,0x2
+   0x08048f06 <+46>:    mov    ebx,eax
+   0x08048f08 <+48>:    add    ebx,DWORD PTR [ebp-0x34]
+   0x08048f0b <+51>:    call   0x80489e0 <rand@plt>
+   0x08048f10 <+56>:    mov    DWORD PTR [ebx],eax
+   0x08048f12 <+58>:    add    DWORD PTR [ebp-0x38],0x1
+   0x08048f16 <+62>:    cmp    DWORD PTR [ebp-0x38],0x7
+   0x08048f1a <+66>:    jle    0x8048f00 <my_hash+40>
+   0x08048f1c <+68>:    mov    eax,DWORD PTR [ebp-0x34]
+   0x08048f1f <+71>:    add    eax,0x4    ; 1
+   0x08048f22 <+74>:    mov    edx,DWORD PTR [eax]
+   0x08048f24 <+76>:    mov    eax,DWORD PTR [ebp-0x34]
+   0x08048f27 <+79>:    add    eax,0x14   ; 5
+   0x08048f2a <+82>:    mov    eax,DWORD PTR [eax]
+   0x08048f2c <+84>:    add    eax,edx    ; idx 1 + idx 5
+   0x08048f2e <+86>:    add    DWORD PTR [ebp-0x30],eax
+   0x08048f31 <+89>:    mov    eax,DWORD PTR [ebp-0x34]
+   0x08048f34 <+92>:    add    eax,0x8    ; 2
+   0x08048f37 <+95>:    mov    edx,DWORD PTR [eax]
+   0x08048f39 <+97>:    mov    eax,DWORD PTR [ebp-0x34]
+   0x08048f3c <+100>:   add    eax,0xc    ; 3
+   0x08048f3f <+103>:   mov    eax,DWORD PTR [eax]
+   0x08048f41 <+105>:   mov    ecx,edx
+   0x08048f43 <+107>:   sub    ecx,eax    ; idx 2 - idx 3
+   0x08048f45 <+109>:   mov    eax,ecx
+   0x08048f47 <+111>:   add    DWORD PTR [ebp-0x30],eax
+   0x08048f4a <+114>:   mov    eax,DWORD PTR [ebp-0x34]
+   0x08048f4d <+117>:   add    eax,0x1c   ; 7
+   0x08048f50 <+120>:   mov    edx,DWORD PTR [eax]
+   0x08048f52 <+122>:   mov    eax,DWORD PTR [ebp-0x34]
+   0x08048f55 <+125>:   add    eax,0x20   ; canary
+   0x08048f58 <+128>:   mov    eax,DWORD PTR [eax]
+   0x08048f5a <+130>:   add    eax,edx    ; idx 7 + canary
+   0x08048f5c <+132>:   add    DWORD PTR [ebp-0x30],eax
+   0x08048f5f <+135>:   mov    eax,DWORD PTR [ebp-0x34]
+   0x08048f62 <+138>:   add    eax,0x10   ; 4
+   0x08048f65 <+141>:   mov    edx,DWORD PTR [eax]
+   0x08048f67 <+143>:   mov    eax,DWORD PTR [ebp-0x34]
+   0x08048f6a <+146>:   add    eax,0x18   ; 6
+   0x08048f6d <+149>:   mov    eax,DWORD PTR [eax]
+   0x08048f6f <+151>:   mov    ecx,edx
+   0x08048f71 <+153>:   sub    ecx,eax    ; idx 4 - idx 6
+   0x08048f73 <+155>:   mov    eax,ecx
+   0x08048f75 <+157>:   add    DWORD PTR [ebp-0x30],eax
+   0x08048f78 <+160>:   mov    eax,DWORD PTR [ebp-0x30]
+   0x08048f7b <+163>:   mov    edx,DWORD PTR [ebp-0xc]
+   0x08048f7e <+166>:   xor    edx,DWORD PTR gs:0x14
+   0x08048f85 <+173>:   je     0x8048f8c <my_hash+180>
+   0x08048f87 <+175>:   call   0x8048990 <__stack_chk_fail@plt>
+   0x08048f8c <+180>:   add    esp,0x34
+   0x08048f8f <+183>:   pop    ebx
+   0x08048f90 <+184>:   pop    ebp
+   0x08048f91 <+185>:   ret
+End of assembler dump.

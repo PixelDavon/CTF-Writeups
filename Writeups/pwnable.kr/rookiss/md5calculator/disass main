@@ -1,0 +1,55 @@
+Dump of assembler code for function main:
+   0x0804908f <+0>:     push   ebp
+   0x08049090 <+1>:     mov    ebp,esp
+   0x08049092 <+3>:     and    esp,0xfffffff0
+   0x08049095 <+6>:     sub    esp,0x20
+   0x08049098 <+9>:     mov    eax,ds:0x804b0c0
+   0x0804909d <+14>:    mov    DWORD PTR [esp+0xc],0x0
+   0x080490a5 <+22>:    mov    DWORD PTR [esp+0x8],0x1
+   0x080490ad <+30>:    mov    DWORD PTR [esp+0x4],0x0
+   0x080490b5 <+38>:    mov    DWORD PTR [esp],eax
+   0x080490b8 <+41>:    call   0x8048970 <setvbuf@plt>
+   0x080490bd <+46>:    mov    eax,ds:0x804b0a0
+   0x080490c2 <+51>:    mov    DWORD PTR [esp+0xc],0x0
+   0x080490ca <+59>:    mov    DWORD PTR [esp+0x8],0x1
+   0x080490d2 <+67>:    mov    DWORD PTR [esp+0x4],0x0
+   0x080490da <+75>:    mov    DWORD PTR [esp],eax
+   0x080490dd <+78>:    call   0x8048970 <setvbuf@plt>
+   0x080490e2 <+83>:    mov    DWORD PTR [esp],0x804928c
+   0x080490e9 <+90>:    call   0x80489c0 <puts@plt>
+   0x080490ee <+95>:    mov    DWORD PTR [esp],0x0
+   0x080490f5 <+102>:   call   0x8048960 <time@plt>
+   0x080490fa <+107>:   mov    DWORD PTR [esp],eax
+   0x080490fd <+110>:   call   0x8048830 <srand@plt>
+   0x08049102 <+115>:   call   0x8048ed8 <my_hash>
+   0x08049107 <+120>:   mov    DWORD PTR [esp+0x1c],eax
+   0x0804910b <+124>:   mov    eax,0x80492bc
+   0x08049110 <+129>:   mov    edx,DWORD PTR [esp+0x1c]
+   0x08049114 <+133>:   mov    DWORD PTR [esp+0x4],edx
+   0x08049118 <+137>:   mov    DWORD PTR [esp],eax
+   0x0804911b <+140>:   call   0x8048940 <printf@plt>
+   0x08049120 <+145>:   mov    eax,0x80492df
+   0x08049125 <+150>:   lea    edx,[esp+0x18]
+   0x08049129 <+154>:   mov    DWORD PTR [esp+0x4],edx
+   0x0804912d <+158>:   mov    DWORD PTR [esp],eax
+   0x08049130 <+161>:   call   0x80489a0 <__isoc99_scanf@plt>
+   0x08049135 <+166>:   mov    eax,DWORD PTR [esp+0x18]
+   0x08049139 <+170>:   cmp    DWORD PTR [esp+0x1c],eax
+   0x0804913d <+174>:   je     0x8049157 <main+200>
+   0x0804913f <+176>:   mov    DWORD PTR [esp],0x80492e2
+   0x08049146 <+183>:   call   0x80489c0 <puts@plt>
+   0x0804914b <+188>:   mov    DWORD PTR [esp],0x0
+   0x08049152 <+195>:   call   0x8048a00 <exit@plt>
+   0x08049157 <+200>:   mov    DWORD PTR [esp],0x80492f4
+   0x0804915e <+207>:   call   0x80489c0 <puts@plt>
+   0x08049163 <+212>:   mov    DWORD PTR [esp],0x8049314
+   0x0804916a <+219>:   call   0x80489c0 <puts@plt>
+   0x0804916f <+224>:   call   0x8048f92 <process_hash>
+   0x08049174 <+229>:   mov    DWORD PTR [esp],0x8049340
+   0x0804917b <+236>:   call   0x80489c0 <puts@plt>
+   0x08049180 <+241>:   mov    DWORD PTR [esp],0x8049361
+   0x08049187 <+248>:   call   0x8048880 <system@plt>
+   0x0804918c <+253>:   mov    eax,0x0
+   0x08049191 <+258>:   leave  
+   0x08049192 <+259>:   ret    
+End of assembler dump.

@@ -1,0 +1,69 @@
+Dump of assembler code for function process_hash:
+   0x08048f92 <+0>:     push   ebp
+   0x08048f93 <+1>:     mov    ebp,esp
+   0x08048f95 <+3>:     push   edi
+   0x08048f96 <+4>:     push   ebx
+   0x08048f97 <+5>:     sub    esp,0x220
+   0x08048f9d <+11>:    mov    eax,gs:0x14
+   0x08048fa3 <+17>:    mov    DWORD PTR [ebp-0xc],eax
+   0x08048fa6 <+20>:    xor    eax,eax
+   0x08048fa8 <+22>:    lea    eax,[ebp-0x20c]
+   0x08048fae <+28>:    mov    ebx,eax
+   0x08048fb0 <+30>:    mov    eax,0x0
+   0x08048fb5 <+35>:    mov    edx,0x80
+   0x08048fba <+40>:    mov    edi,ebx
+   0x08048fbc <+42>:    mov    ecx,edx
+   0x08048fbe <+44>:    rep stos DWORD PTR es:[edi],eax
+   0x08048fc0 <+46>:    nop
+   0x08048fc1 <+47>:    call   0x8048840 <getchar@plt>
+   0x08048fc6 <+52>:    cmp    eax,0xa
+   0x08048fc9 <+55>:    jne    0x8048fc1 <process_hash+47>
+   0x08048fcb <+57>:    mov    ebx,0x804b0e0
+   0x08048fd0 <+62>:    mov    eax,0x0
+   0x08048fd5 <+67>:    mov    edx,0x100
+   0x08048fda <+72>:    mov    edi,ebx
+   0x08048fdc <+74>:    mov    ecx,edx
+   0x08048fde <+76>:    rep stos DWORD PTR es:[edi],eax
+   0x08048fe0 <+78>:    mov    eax,ds:0x804b0a0
+   0x08048fe5 <+83>:    mov    DWORD PTR [esp+0x8],eax
+   0x08048fe9 <+87>:    mov    DWORD PTR [esp+0x4],0x400
+   0x08048ff1 <+95>:    mov    DWORD PTR [esp],0x804b0e0
+   0x08048ff8 <+102>:   call   0x80488a0 <fgets@plt>
+   0x08048ffd <+107>:   lea    eax,[ebp-0x20c]
+   0x08049003 <+113>:   mov    ebx,eax
+   0x08049005 <+115>:   mov    eax,0x0
+   0x0804900a <+120>:   mov    edx,0x80
+   0x0804900f <+125>:   mov    edi,ebx
+   0x08049011 <+127>:   mov    ecx,edx
+   0x08049013 <+129>:   rep stos DWORD PTR es:[edi],eax
+   0x08049015 <+131>:   lea    eax,[ebp-0x20c]
+   0x0804901b <+137>:   mov    DWORD PTR [esp+0x4],eax
+   0x0804901f <+141>:   mov    DWORD PTR [esp],0x804b0e0
+   0x08049026 <+148>:   call   0x8048cd5 <Base64Decode>
+   0x0804902b <+153>:   mov    DWORD PTR [ebp-0x214],eax
+   0x08049031 <+159>:   mov    eax,DWORD PTR [ebp-0x214]
+   0x08049037 <+165>:   mov    DWORD PTR [esp+0x4],eax
+   0x0804903b <+169>:   lea    eax,[ebp-0x20c]
+   0x08049041 <+175>:   mov    DWORD PTR [esp],eax
+   0x08049044 <+178>:   call   0x8048dd8 <calc_md5>
+   0x08049049 <+183>:   mov    DWORD PTR [ebp-0x210],eax
+   0x0804904f <+189>:   mov    eax,0x8049279
+   0x08049054 <+194>:   mov    edx,DWORD PTR [ebp-0x210]
+   0x0804905a <+200>:   mov    DWORD PTR [esp+0x4],edx
+   0x0804905e <+204>:   mov    DWORD PTR [esp],eax
+   0x08049061 <+207>:   call   0x8048940 <printf@plt>
+   0x08049066 <+212>:   mov    eax,DWORD PTR [ebp-0x210]
+   0x0804906c <+218>:   mov    DWORD PTR [esp],eax
+   0x0804906f <+221>:   call   0x8048900 <free@plt>
+   0x08049074 <+226>:   mov    eax,DWORD PTR [ebp-0xc]
+   0x08049077 <+229>:   xor    eax,DWORD PTR gs:0x14
+   0x0804907e <+236>:   je     0x8049085 <process_hash+243>
+   0x08049080 <+238>:   call   0x8048990 <__stack_chk_fail@plt>
+   0x08049085 <+243>:   add    esp,0x220
+   0x0804908b+4 <+249>:   pop    ebx
+   0x0804908c <+250>:   pop    edi
+   0x0804908d <+251>:   pop    ebp
+   0x0804908e <+252>:   ret    
+End of assembler dump.
+0x0804908b+4 =
+

@@ -1,0 +1,79 @@
+Dump of assembler code for function Base64Decode:
+   0x08048cd5 <+0>:     push   ebp
+   0x08048cd6 <+1>:     mov    ebp,esp
+   0x08048cd8 <+3>:     push   edi
+   0x08048cd9 <+4>:     sub    esp,0x44
+   0x08048cdc <+7>:     mov    eax,DWORD PTR [ebp+0x8]
+   0x08048cdf <+10>:    mov    DWORD PTR [esp],eax
+   0x08048ce2 <+13>:    call   0x8048c36 <calcDecodeLength>
+   0x08048ce7 <+18>:    mov    DWORD PTR [ebp-0x1c],eax
+   0x08048cea <+21>:    mov    DWORD PTR [ebp-0x18],0x0
+   0x08048cf1 <+28>:    mov    eax,DWORD PTR [ebp+0x8]
+   0x08048cf4 <+31>:    mov    DWORD PTR [ebp-0x2c],0xffffffff
+   0x08048cfb <+38>:    mov    edx,eax
+   0x08048cfd <+40>:    mov    eax,0x0
+   0x08048d02 <+45>:    mov    ecx,DWORD PTR [ebp-0x2c]
+   0x08048d05 <+48>:    mov    edi,edx
+   0x08048d07 <+50>:    repnz scas al,BYTE PTR es:[edi]
+   0x08048d09 <+52>:    mov    eax,ecx
+   0x08048d0b <+54>:    not    eax
+   0x08048d0d <+56>:    sub    eax,0x1
+   0x08048d10 <+59>:    mov    DWORD PTR [esp+0x8],0x8049272
+   0x08048d18 <+67>:    mov    DWORD PTR [esp+0x4],eax
+   0x08048d1c <+71>:    mov    eax,DWORD PTR [ebp+0x8]
+   0x08048d1f <+74>:    mov    DWORD PTR [esp],eax
+   0x08048d22 <+77>:    call   0x8048860 <fmemopen@plt>
+   0x08048d27 <+82>:    mov    DWORD PTR [ebp-0x14],eax
+   0x08048d2a <+85>:    call   0x80488f0 <BIO_f_base64@plt>
+   0x08048d2f <+90>:    mov    DWORD PTR [esp],eax
+   0x08048d32 <+93>:    call   0x80489d0 <BIO_new@plt>
+   0x08048d37 <+98>:    mov    DWORD PTR [ebp-0x10],eax
+   0x08048d3a <+101>:   mov    DWORD PTR [esp+0x4],0x0
+   0x08048d42 <+109>:   mov    eax,DWORD PTR [ebp-0x14]
+   0x08048d45 <+112>:   mov    DWORD PTR [esp],eax
+   0x08048d48 <+115>:   call   0x80488b0 <BIO_new_fp@plt>
+   0x08048d4d <+120>:   mov    DWORD PTR [ebp-0xc],eax
+   0x08048d50 <+123>:   mov    eax,DWORD PTR [ebp-0xc]
+   0x08048d53 <+126>:   mov    DWORD PTR [esp+0x4],eax
+   0x08048d57 <+130>:   mov    eax,DWORD PTR [ebp-0x10]
+   0x08048d5a <+133>:   mov    DWORD PTR [esp],eax
+   0x08048d5d <+136>:   call   0x80488e0 <BIO_push@plt>
+   0x08048d62 <+141>:   mov    DWORD PTR [ebp-0xc],eax
+   0x08048d65 <+144>:   mov    DWORD PTR [esp+0x4],0x100
+   0x08048d6d <+152>:   mov    eax,DWORD PTR [ebp-0xc]
+   0x08048d70 <+155>:   mov    DWORD PTR [esp],eax
+   0x08048d73 <+158>:   call   0x8048890 <BIO_set_flags@plt>
+   0x08048d78 <+163>:   mov    eax,DWORD PTR [ebp+0x8]
+   0x08048d7b <+166>:   mov    DWORD PTR [ebp-0x2c],0xffffffff
+   0x08048d82 <+173>:   mov    edx,eax
+   0x08048d84 <+175>:   mov    eax,0x0
+   0x08048d89 <+180>:   mov    ecx,DWORD PTR [ebp-0x2c]
+   0x08048d8c <+183>:   mov    edi,edx
+   0x08048d8e <+185>:   repnz scas al,BYTE PTR es:[edi]
+   0x08048d90 <+187>:   mov    eax,ecx
+   0x08048d92 <+189>:   not    eax
+   0x08048d94 <+191>:   sub    eax,0x1
+   0x08048d97 <+194>:   mov    DWORD PTR [esp+0x8],eax
+   0x08048d9b <+198>:   mov    eax,DWORD PTR [ebp+0xc]
+   0x08048d9e <+201>:   mov    DWORD PTR [esp+0x4],eax
+   0x08048da2 <+205>:   mov    eax,DWORD PTR [ebp-0xc]
+   0x08048da5 <+208>:   mov    DWORD PTR [esp],eax
+   0x08048da8 <+211>:   call   0x80489b0 <BIO_read@plt>
+   0x08048dad <+216>:   mov    DWORD PTR [ebp-0x18],eax
+   0x08048db0 <+219>:   mov    eax,DWORD PTR [ebp-0x18]
+   0x08048db3 <+222>:   add    eax,DWORD PTR [ebp+0xc]
+   0x08048db6 <+225>:   mov    BYTE PTR [eax],0x0
+   0x08048db9 <+228>:   mov    eax,DWORD PTR [ebp-0xc]
+   0x08048dbc+4 <+231>:   mov    DWORD PTR [esp],eax
+   0x08048dbf <+234>:   call   0x80488d0 <BIO_free_all@plt>
+   0x08048dc4 <+239>:   mov    eax,DWORD PTR [ebp-0x14]
+   0x08048dc7 <+242>:   mov    DWORD PTR [esp],eax
+   0x08048dca <+245>:   call   0x8048910 <fclose@plt>
+   0x08048dcf <+250>:   mov    eax,DWORD PTR [ebp-0x1c]
+   0x08048dd2 <+253>:   add    esp,0x44
+   0x08048dd5 <+256>:   pop    edi
+   0x08048dd6 <+257>:   pop    ebp
+   0x08048dd7 <+258>:   ret    
+End of assembler dump.
+
+0x08048db9+3=0x8048DBC
