@@ -1,4 +1,4 @@
-# leakss (conceptually, only tested locally with http, not actual ctf environment)
+# leakss (upsolve, conceptually, only tested locally with http, not actual ctf environment)
 
 **CTF:** BeeCTF 2025
 
